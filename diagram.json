@@ -1,0 +1,213 @@
+{
+  "version": 1,
+  "author": "generated for xbox-style controller simulation",
+  "editor": "wokwi",
+  "parts": [
+    {
+      "type": "board-esp32-s3-devkitc-1",
+      "id": "esp",
+      "top": -460.98,
+      "left": -81.83,
+      "attrs": {}
+    },
+    { "type": "wokwi-joystick", "id": "joyL", "top": -160, "left": -320, "attrs": {} },
+    { "type": "wokwi-joystick", "id": "joyR", "top": -160, "left": 200, "attrs": {} },
+    {
+      "type": "wokwi-potentiometer",
+      "id": "trigLT",
+      "top": -174.1,
+      "left": -201.8,
+      "attrs": { "value": "0" }
+    },
+    {
+      "type": "wokwi-potentiometer",
+      "id": "trigRT",
+      "top": -145.3,
+      "left": 67,
+      "attrs": { "value": "0" }
+    },
+    {
+      "type": "wokwi-pushbutton",
+      "id": "btnUp",
+      "top": -569.8,
+      "left": -240,
+      "attrs": { "color": "gray" }
+    },
+    {
+      "type": "wokwi-pushbutton",
+      "id": "btnDown",
+      "top": -493,
+      "left": -412.8,
+      "attrs": { "color": "gray" }
+    },
+    {
+      "type": "wokwi-pushbutton",
+      "id": "btnLeft",
+      "top": -608.2,
+      "left": -307.2,
+      "attrs": { "color": "gray" }
+    },
+    {
+      "type": "wokwi-pushbutton",
+      "id": "btnRight",
+      "top": -569.8,
+      "left": -384,
+      "attrs": { "color": "gray" }
+    },
+    {
+      "type": "wokwi-pushbutton",
+      "id": "btnA",
+      "top": -493,
+      "left": 297.6,
+      "attrs": { "color": "green" }
+    },
+    {
+      "type": "wokwi-pushbutton",
+      "id": "btnB",
+      "top": -608.2,
+      "left": 182.4,
+      "attrs": { "color": "red" }
+    },
+    {
+      "type": "wokwi-pushbutton",
+      "id": "btnX",
+      "top": -560.2,
+      "left": 105.6,
+      "attrs": { "color": "blue" }
+    },
+    {
+      "type": "wokwi-pushbutton",
+      "id": "btnY",
+      "top": -569.8,
+      "left": 249.6,
+      "attrs": { "color": "yellow" }
+    },
+    {
+      "type": "wokwi-pushbutton",
+      "id": "btnLB",
+      "top": -781,
+      "left": -326.4,
+      "attrs": { "color": "gray" }
+    },
+    {
+      "type": "wokwi-pushbutton",
+      "id": "btnRB",
+      "top": -781,
+      "left": 172.8,
+      "attrs": { "color": "gray" }
+    },
+    {
+      "type": "wokwi-pushbutton",
+      "id": "btnStart",
+      "top": -70.6,
+      "left": -38.4,
+      "attrs": { "color": "gray" }
+    },
+    {
+      "type": "wokwi-pushbutton",
+      "id": "btnBack",
+      "top": -70.6,
+      "left": -144,
+      "attrs": { "color": "gray" }
+    },
+    {
+      "type": "wokwi-pushbutton",
+      "id": "btnGuide",
+      "top": 6.2,
+      "left": -144,
+      "attrs": { "color": "black" }
+    },
+    {
+      "type": "wokwi-pushbutton",
+      "id": "btnShare",
+      "top": 15.8,
+      "left": -38.4,
+      "attrs": { "color": "gray" }
+    },
+    {
+      "type": "wokwi-led",
+      "id": "rumbleL",
+      "top": -838.8,
+      "left": -178.6,
+      "attrs": { "color": "red" }
+    },
+    {
+      "type": "wokwi-led",
+      "id": "rumbleR",
+      "top": -838.8,
+      "left": 42.2,
+      "attrs": { "color": "red" }
+    },
+    {
+      "type": "wokwi-resistor",
+      "id": "rL",
+      "top": -658.45,
+      "left": -96,
+      "attrs": { "value": "220" }
+    },
+    {
+      "type": "wokwi-resistor",
+      "id": "rR",
+      "top": -658.45,
+      "left": -9.6,
+      "attrs": { "value": "220" }
+    },
+    { "type": "wokwi-neopixel", "id": "statusLed", "top": -89.9, "left": -10.6, "attrs": {} }
+  ],
+  "connections": [
+    [ "esp:GND.1", "joyL:GND", "black", [] ],
+    [ "esp:3V3", "joyL:+5V", "red", [] ],
+    [ "esp:1", "joyL:VRx", "green", [] ],
+    [ "esp:2", "joyL:VRy", "green", [] ],
+    [ "esp:8", "joyL:SW", "yellow", [] ],
+    [ "esp:GND.2", "joyR:GND", "black", [] ],
+    [ "esp:3V3", "joyR:+5V", "red", [] ],
+    [ "esp:4", "joyR:VRx", "green", [] ],
+    [ "esp:5", "joyR:VRy", "green", [] ],
+    [ "esp:9", "joyR:SW", "yellow", [] ],
+    [ "esp:GND.3", "trigLT:GND", "black", [] ],
+    [ "esp:3V3", "trigLT:VCC", "red", [] ],
+    [ "esp:6", "trigLT:SIG", "green", [] ],
+    [ "esp:GND.4", "trigRT:GND", "black", [] ],
+    [ "esp:3V3", "trigRT:VCC", "red", [] ],
+    [ "esp:7", "trigRT:SIG", "green", [] ],
+    [ "esp:10", "btnUp:1.l", "yellow", [] ],
+    [ "btnUp:2.l", "esp:GND.5", "black", [] ],
+    [ "esp:11", "btnDown:1.l", "yellow", [] ],
+    [ "btnDown:2.l", "esp:GND.6", "black", [] ],
+    [ "esp:12", "btnLeft:1.l", "yellow", [] ],
+    [ "btnLeft:2.l", "esp:GND.7", "black", [] ],
+    [ "esp:13", "btnRight:1.l", "yellow", [] ],
+    [ "btnRight:2.l", "esp:GND.8", "black", [] ],
+    [ "esp:14", "btnA:1.l", "yellow", [] ],
+    [ "btnA:2.l", "esp:GND.9", "black", [] ],
+    [ "esp:15", "btnB:1.l", "yellow", [] ],
+    [ "btnB:2.l", "esp:GND.10", "black", [] ],
+    [ "esp:16", "btnX:1.l", "yellow", [] ],
+    [ "btnX:2.l", "esp:GND.11", "black", [] ],
+    [ "esp:17", "btnY:1.l", "yellow", [] ],
+    [ "btnY:2.l", "esp:GND.12", "black", [] ],
+    [ "esp:18", "btnLB:1.l", "yellow", [] ],
+    [ "btnLB:2.l", "esp:GND.13", "black", [] ],
+    [ "esp:21", "btnRB:1.l", "yellow", [] ],
+    [ "btnRB:2.l", "esp:GND.14", "black", [] ],
+    [ "esp:33", "btnStart:1.l", "yellow", [] ],
+    [ "btnStart:2.l", "esp:GND.15", "black", [] ],
+    [ "esp:34", "btnBack:1.l", "yellow", [] ],
+    [ "btnBack:2.l", "esp:GND.16", "black", [] ],
+    [ "esp:35", "btnGuide:1.l", "yellow", [] ],
+    [ "btnGuide:2.l", "esp:GND.17", "black", [] ],
+    [ "esp:36", "btnShare:1.l", "yellow", [] ],
+    [ "btnShare:2.l", "esp:GND.18", "black", [] ],
+    [ "esp:37", "rL:1", "orange", [] ],
+    [ "rL:2", "rumbleL:A", "orange", [] ],
+    [ "rumbleL:C", "esp:GND.19", "black", [] ],
+    [ "esp:38", "rR:1", "orange", [] ],
+    [ "rR:2", "rumbleR:A", "orange", [] ],
+    [ "rumbleR:C", "esp:GND.20", "black", [] ],
+    [ "esp:3V3", "statusLed:VCC", "red", [] ],
+    [ "esp:GND.21", "statusLed:GND", "black", [] ],
+    [ "esp:39", "statusLed:DIN", "green", [] ]
+  ],
+  "dependencies": {}
+}
