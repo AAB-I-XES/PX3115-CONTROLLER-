@@ -43,18 +43,7 @@ It's built around the **ESP32-S3**, chosen because it has native USB and built-i
 </td>
 <td width="40%" align="center">
 
-```
-┌─────────────────────────┐
-│   ┌───┐         ┌───┐   │
-│   │ ⊕ │  ⌒ ⌒    │ ⊕ │   │
-│   └───┘  ⌒ ⌒    └───┘   │
-│                          │
-│   ▲                     │
-│  ◄ ►      ≡  ≡     Y    │
-│   ▼                X  B │
-│                     A    │
-└─────────────────────────┘
-```
+<img src="image.jpg>
 
 </td>
 </tr>
