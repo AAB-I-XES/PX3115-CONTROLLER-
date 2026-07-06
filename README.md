@@ -1,15 +1,14 @@
 <div align="center">
 
-# 🎮 ESP32-S3 Xbox-Style Game Controller
+# 🎮 PX3115- CONTROLLER USING ESP32-S3
 
-### A fully simulated wireless + wired game controller, built for Wokwi
+### A fully simulated wireless + wired game controller, You can simulate this repo in WOKWI
 
 [![Platform](https://img.shields.io/badge/platform-ESP32--S3-blue?style=for-the-badge&logo=espressif&logoColor=white)](https://www.espressif.com/en/products/socs/esp32-s3)
 [![Simulator](https://img.shields.io/badge/simulator-Wokwi-orange?style=for-the-badge)](https://wokwi.com)
 [![Connectivity](https://img.shields.io/badge/connectivity-USB--C%20%2B%20BLE-brightgreen?style=for-the-badge)](#connectivity)
 [![License](https://img.shields.io/badge/license-MIT-lightgrey?style=for-the-badge)](#license)
 
-No physical hardware required — the entire circuit and firmware run in-browser via Wokwi.
 
 </div>
 
@@ -36,7 +35,7 @@ No physical hardware required — the entire circuit and firmware run in-browser
 <tr>
 <td width="60%">
 
-This project simulates a complete **Xbox-style game controller** — two analog sticks, a D-pad, ABXY buttons, shoulder buttons, analog triggers, menu buttons, rumble motors, and a status LED — entirely inside [Wokwi](https://wokwi.com), no soldering iron required.
+This project simulates a complete — two analog sticks, a D-pad, ABXY buttons, shoulder buttons, analog triggers, menu buttons, rumble motors, and a status LED — can entirely inside [Wokwi](https://wokwi.com), no soldering iron required.
 
 It's built around the **ESP32-S3**, chosen because it has native USB and built-in Bluetooth LE, so the same chip can act as a wired *or* wireless HID gamepad.
 
